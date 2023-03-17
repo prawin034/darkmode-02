@@ -1,0 +1,29 @@
+.dark-theme {
+  --background: black;
+  --colorFont: #fff;
+  --color-primary: red;
+  --color-pink: #ff095b;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.light-theme {
+  --background: #fff;
+  --colorFont: black;
+  --color-primary: #1098ad;
+  --color-pink: #d23669;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background);
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}

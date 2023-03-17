@@ -1,0 +1,93 @@
+.nav {
+  width: 100%;
+  margin: 5rem auto;
+  display: grid;
+  place-items: center;
+  &_Center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    @include respond(TAB) {
+      justify-content: space-between;
+      gap: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: var(--color-primary);
+      @include respond(TAB) {
+        font-size: 3rem;
+        text-transform: capitalize;
+      }
+    }
+    button {
+      color: #fff;
+      background-color: #1098ad;
+
+      border: none;
+      font-size: 4rem;
+      padding: 1rem;
+      cursor: pointer;
+      @include respond(TAB) {
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        background-color: #0b2124;
+      }
+    }
+  }
+}
+
+.article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  // align-items: center;
+  // text-align: justify;
+
+  @include respond(TAB) {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: var(--color-pink);
+    @include respond(TAB) {
+      font-size: 2rem;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+  }
+  span {
+    font-size: 2rem;
+    color: var(--colorFont);
+    @include respond(TAB) {
+      font-size: 2rem;
+    }
+  }
+  p {
+    font-size: 3rem;
+    color: var(--colorFont);
+    @include respond(TAB) {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
